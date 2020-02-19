@@ -1,0 +1,69 @@
+This is a file written in a windows PC. 
+
+-------------------------------------------------------------------------------------------
+(1) The windows user first cloned the remote github repository found at 
+https://github.com/beorostica/learning_git_github.git:
+
+MINGW64 ~/Desktop
+$ git clone https://github.com/beorostica/learning_git_github.git
+
+MINGW64 ~/Desktop
+$ cd learning_git_github
+
+MINGW64 ~/Desktop/learning_git_github (master)
+$ ls -al
+total 17
+drwxr-xr-x 1 beorostica 197121  0 Feb 19 13:58 ./
+drwxr-xr-x 1 beorostica 197121  0 Feb 19 13:58 ../
+drwxr-xr-x 1 beorostica 197121  0 Feb 19 13:57 .git/
+-rw-r--r-- 1 beorostica 197121 52 Feb 19 11:04 README.md
+
+-------------------------------------------------------------------------------------------
+
+(2) Then the user checked its local status:
+
+MINGW64 ~/Desktop/learning_git_github (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+MINGW64 ~/Desktop/learning_git_github (master)
+$ git log
+commit acd4399ecb984a61309179a15e11bec02e411fa7 (HEAD -> master, origin/master, origin/HEAD)
+Author: beorostica <36004160+beorostica@users.noreply.github.com>
+Date:   Wed Feb 19 11:02:18 2020 -0300
+
+    Initial commit
+
+-------------------------------------------------------------------------------------------
+
+(3) Then the user created a branch called "branch-from-windows-pc" and checkouted that branch:
+
+MINGW64 ~/Desktop/learning_git_github (master)
+$ git branch branch-from-windows-pc
+
+MINGW64 ~/Desktop/learning_git_github (master)
+$ git checkout branch-from-windows-pc
+Switched to branch 'branch-from-windows-pc'
+
+MINGW64 ~/Desktop/learning_git_github (branch-from-windows-pc)
+$ git branch
+* branch-from-windows-pc
+  master
+
+-------------------------------------------------------------------------------------------
+
+(4) Finally, he created the a folder and this file:
+
+MINGW64 ~/Desktop/learning_git_github (branch-from-windows-pc)
+$ mkdir Folder_from_Windows_PC
+
+MINGW64 ~/Desktop/learning_git_github (branch-from-windows-pc)
+$ touch file_from_windows_pc.txt
+
+-------------------------------------------------------------------------------------------
+
+
+
